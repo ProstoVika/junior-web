@@ -1,0 +1,157 @@
+.navbar {
+    min-height: 140px;
+    background-color: rgba(19, 17, 17, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 0 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+    background-color: rgba(19, 17, 17, 1);
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: 300px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.navbar .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #bdc2c4;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #bdc2c4;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link:focus::after {
+    width: 100%;
+
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    filter: invert(1) brightness(2);
+    padding: 5px;
+}
+
+.navbar .header-contact {
+    margin-left: auto;
+}
+
+.navbar .header-contact a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.navbar .header-contact a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d3d4d5;
+    transition: width 0.3s ease;
+}
+
+.navbar .header-contact a:hover,
+.navbar .header-contact a:focus {
+    color: #ffffff;
+}
+
+.navbar .header-contact a:hover::after,
+.navbar .header-contact a:focus::after {
+    width: 100%;
+}
+
+
+.hero {
+    background: url('./images/dark-server-racks-computer-network-security-server-room-data-center-generative-ai.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+    z-index: 0;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: 5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    padding: 0.9rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
